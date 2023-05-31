@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 한글 인코딩 에러 방지 -->
+        <meta charset="utf-8">
+        <!-- 스타일(css) 부분 -->
+        <style>
+            /* 폰트 */
+            @font-face {
+                font-family: 'SDSamliphopangche_Outline';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            /* 태그 스타일 정의*/
+            html {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                /* 배경 이미지를 url로 불러오지만 해당 주소가 바뀐 경우 그림이 안보여 흰색 배경이 나오는걸 방지하기 위해 배경값을 따로 줌*/ 
+                background: #060e1b;
+                background-image: url(https://cdn.pixabay.com/photo/2020/11/07/01/40/abstract-5719530_1280.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* 폰트 사용 */
+                font: bold;
+                font-family: 'SDSamliphopangche_Outline';
+                text-shadow:
+                    0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 0px #fff,
+                    0 0 10px #fff;
+            }
+            /* body */
+            body {
+                text-align: center;
+                margin: 200px auto;
+            }
+            /* input */
+            input {
+                padding: 1%;
+                margin: 10px auto;
+            }
+            /* select */
+            select{
+                padding: 1%;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            /* div */
+            div{
+                width: 400px;
+                margin: auto;
+            }
+            /* 공통적으로 사용하는 옵션을 클래스로 정의함 */
+            .ani {
+                color: white;
+                animation: input-ani 5s infinite;
+                border-radius: 10%;
+                background: rgb(6, 14, 27, 0.5);
+                text-align: center;
+            }
+            h1, h2, label{ color:#060e1b; }
+            /* 애니메이션 */
+            @keyframes input-ani {
+                0% {
+                    box-shadow:
+                    0 0 10px rgb(255, 255, 102),
+                    0 0 10px rgb(252, 110, 34),
+                    0 0 10px rgb(255, 20, 147),
+                    0 0 10px rgb(194, 76, 246);
+                }
+                33% {
+                    box-shadow:
+                    0 0 10px rgb(194, 76, 246),
+                    0 0 10px rgb(255, 255, 102),
+                    0 0 10px rgb(252, 110, 34),
+                    0 0 10px rgb(255, 20, 147);
+                }
+                66% {
+                    box-shadow:
+                    0 0 10px rgb(255, 20, 147),
+                    0 0 10px rgb(194, 76, 246),
+                    0 0 10px rgb(255, 255, 102),
+                    0 0 10px rgb(252, 110, 34);
+                }
+                100% {
+                    box-shadow:
+                    0 0 10px rgb(252, 110, 34),
+                    0 0 10px rgb(255, 20, 147),
+                    0 0 10px rgb(194, 76, 246),
+                    0 0 10px rgb(255, 255, 102);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>201968038 한재성</h2>
+            <h1>shiniper's home</h1>
+            <!-- 예약 하는 곳-->
+            <form method="get" action="homepage+css.html" class="ani">
+                <h2> 우주여행 예약 </h2>
+                <!-- 이름 -->
+                <label for="name"><b>예약자 성함</b></label><br>
+                <input type="text" placeholder="ex.홍길동" name="name"  class="ani" required> <br>
+                <!-- 연락처 -->
+                <label for="num"><b>연락처</b></label><br>
+                <input type="text" placeholder="ex.010-1234-5678" pattern="\d{3}-\d{3,4}-\d{4}" name="num"  class="ani" required> <br>
+                <!-- 희망 행성 -->
+                <select name="planet" class="ani" required>
+                    <option value="none">-희망 행성-</option>
+                    <option value="Mars">화성</option>
+                    <option value="Moon">달</option>
+                </select> <br>
+                <!-- 희망 날짜 -->
+                <label for="day"><b>희망 날짜</b></label><br>
+                <input type="date" name="day" class="ani" required> <br>
+                <!-- 예약 및 취소 -->
+                <input type="submit" value="예약하기"  class="ani">&nbsp;&nbsp;<input type="reset" value="취소하기"  class="ani">
+            </form> 
+        </div>
+    </body>
+</html>

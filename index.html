@@ -6,9 +6,6 @@
         <style>
             
         </style>
-        <script> 
-        
-        </script>
     </head>
     <body>
         <header>
@@ -16,123 +13,150 @@
         </header>
         <nav>
             <ul id="horizontal">
-                <li></li>
-                <li> <a href="http://www.github.com" target="_blank"><img src="https://github.com/scv829/webProgramming/blob/main/image/github.png?raw=true"  class="hor_menu" > </a> </li>
-                <li> <a href="http://www.facebook.com" target="_blank"><img src="https://github.com/scv829/webProgramming/blob/main/image/facebook.png?raw=true" class="hor_menu" > </a> </li>
-                <li> <a href="http://www.instagram.com/" target="_blank"><img src="https://github.com/scv829/webProgramming/blob/main/image/instargram.png?raw=true" class="hor_menu" > </a> </li>
-                <li></li>
+                <li> <a href="http://www.github.com" target="_blank"><img src="image/github.png"  class="hor_menu" id="l1"> </a> </li>
+                <li> <a href="http://www.facebook.com" target="_blank"><img src="image/facebook.png" class="hor_menu " id="l2"> </a> </li>
+                <li> <a href="http://www.instagram.com/" target="_blank"><img src="image/instargram.png"  class="hor_menu" id="l3"> </a> </li>
             </ul>
         </nav>
         <section>
             <div id="vertical">
-                <a href="#space" class="ver_menu">Language space</a>
-                <div class="parent-button ver_menu">learned plant
-                    <div class="child-buttons">
-                      <a href="#c"><button class="child-button"></button></a>
-                      <a href="#cpp"><button class="child-button"></button></a>
-                      <a href="#csharp"><button class="child-button"></button></a>
-                      <a href="#java"><button class="child-button "></button></a>
-                      <a href="#swift"><button class="child-button "></button></a>
-                      <a href="#android"><button class="child-button"></button></a>
-                      <a href="#linux"><button class="child-button"></button></a>
-                    </div>
-                  </div>
-               <a href="http://202.31.247.153" class="ver_menu" target="_blank">shiniper's post</a>
-            </div>
-            <!-- 컨텐츠 나오는 공간 -->
-            <article class="content" >
-                <!-- c언어 컨텐츠 -->
-                <div class="planet" id="c">
-                    <div class="divS1">
-                        <h1>행성 이름</h1>
-                        <h3> C Language</h3>
-                    </div>
-                    <div class="divS2">
-                        <br><br>
-                        c언어
-                    </div>
-                </div>
-
-                <!-- c++언어 컨텐츠 -->
-                <div class="planet" id="cpp">
-                    <div class="divS1">
-                        <h1>행성 이름</h1>
-                        <h3> C++ Language</h3>
-                    </div>
-                    <div class="divS2">
-                        <br>
-                        c++
-                    </div>
-                </div>
-
-                 <!-- c#언어 컨텐츠 -->
-                 <div class="planet" id="csharp">
-                    <div class="divS1">
-                        <h1>행성 이름</h1>
-                        <h3> C# Language</h3>
-                    </div>
-                    <div class="divS2">
-                        <br>
-                        c#
-                    </div>
-                </div>
-
-                 <!-- Java언어 컨텐츠 -->
-                 <div class="planet" id="java">
-                    <div class="divS1">
-                        <h1>행성 이름</h1>
-                        <h3> Java Language</h3>
-                    </div>
-                    <div class="divS2">
-                        <br>
-                        java
+                <a href="#project_planet" class="ver_menu">project planet</a>
+                <a href="#learned_planet" class="ver_menu">learned planet</a>
+                <div class="dropdown">input
+                    <div class="dropdown-content">
+                        <a href="#login">login</a>
+                        <a href="#signup">signup</a>
                     </div>
                 </div>
                 
-                <!-- swift 컨텐츠 -->
-                <div class="planet" id="swift">
-                    <div class="divS1">
-                        <h1>행성 이름</h1>
-                        <h3> swift Language</h3>
+            </div>
+            <!-- 컨텐츠 나오는 공간 -->
+            <article>
+                <!-- 1. project_planet-->
+                <div id="project_planet">
+                    <!-- 팀 프로젝트-->
+                    <div id="team">
+                        <h1>팀 프로젝트</h1> <br>
+                        <b>c언어 - 대학생활도우미 앱</b>
                     </div>
-                    <div class="divS2">
-                        <br>
-                        swift
+                    <hr>
+                    <!-- 개인 프로젝트-->
+                    <div id="solo">
+                        <b>Java - 학교 배경 길찾기 게임 <br><br>
+                        Android - 자동화 플랜 앱 개발 <br> <br>
+                        linux - DB, apache 서버 구동</b><br>
+                        <h1>개인 프로젝트</h1>
+                    </div>
+                </div>
+                <!-- 2. learned_planet -->
+                <div id="learned_planet">
+                    <!-- c 컨텐츠 -->
+                    <div class="planet" id="c">
+                        <div class="imgBox"><img src="image/c.png" ></div>
+                        <div class="detail">
+                            <span>
+                                <h1> <p>C</p> </h1>
+                                <p class="p1">printf("한재성");</p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- c++ 컨텐츠 -->
+                    <div class="planet" id="cpp">
+                        <div class="imgBox"><img src="image/cpp.png" ></div>
+                        <div class="detail">
+                            <span>
+                                <h1> <p>C++</p> </h1>
+                                <p class="p1">std::cont <<  "한재성"  << std::endl;</p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- c# 컨텐츠 -->
+                    <div class="planet" id="csharp">
+                        <div class="imgBox"><img src="image/csharp.png" ></div>
+                        <div class="detail">
+                            <span>
+                                <h1> <p>C#</p> </h1>
+                                <p class="p1">Console.Write("한재성");</p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- java 컨텐츠 -->
+                    <div class="planet" id="java">
+                        <div class="imgBox"><img src="image/java.png" ></div>
+                        <div class="detail">
+                            <span>
+                                <h1> <p>Java</p> </h1>
+                                <p class="p1">System.out.print("한재성");</p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- swift 컨텐츠 -->
+                    <div class="planet" id="swift">
+                        <div class="imgBox"><img src="image/swift.png" ></div>
+                        <div class="detail">
+                            <span>
+                                <h1> <p>Swift</p> </h1>
+                                <p class="p1">print("한재성")</p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- android 컨텐츠 -->
+                    <div class="planet" id="android">
+                        <div class="imgBox"><img src="image/android.png" ></div>
+                        <div class="detail">
+                            <span>
+                                <h1> <p>Android</p> </h1>
+                                <p class="p1">android:text="한재성";</p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- linux 컨텐츠 -->
+                    <div class="planet" id="linux">
+                        <div class="imgBox"><img src="image/linux.png" ></div>
+                        <div class="detail">
+                            <span>
+                                <h1> <p>linux</p> </h1>
+                                <p class="p1">[한재성@shiniper ~]$ whoami</p>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- android 컨텐츠 -->
-                <div class="planet" id="android">
-                    <div class="divS1">
-                        <h1>행성 이름</h1>
-                        <h3> android studio</h3>
-                    </div>
-                    <div class="divS2">
-                        <br>
-                       android
-                    </div>
+                <!-- 3. input-->
+                <div class="sign" id="login">
+                    <fieldset>
+                        <legend>로그인</legend>
+                        <div>아이디 : <br><br>  <input type="text"></div>
+                        <div>비밀번호 : <br><br>  <input type="password"></div>
+                        <div>
+                            <input type="submit" value="로그인"> &nbsp; <input type="reset" value="취 소">
+                        </div>   
+                    </fieldset>
+                    
                 </div>
-
-                <!-- linux 컨텐츠 -->
-                <div class="planet" id="linux">
-                    <div class="divS1">
-                        <h1>행성 이름</h1>
-                        <h3> linux </h3>
-                    </div>
-                    <div class="divS2">
-                        <br>
-                        linux
-                    </div>
+                <div class="sign" id="signup">
+                    <fieldset>
+                        <legend>회원가입</legend>
+                        <div>아이디 : <br><br>  <input type="text"></div>
+                        <div>비밀번호 : <br><br>  <input type="password"></div>
+                        <div>비밀번호 확인 : <br><br>  <input type="password"></div>
+                        <div>이름 : <br><br>  <input type="text"></div>
+                        <div>
+                            <input type="submit" value="회원가입"> &nbsp; <input type="reset" value="취 소">
+                        </div>   
+                    </fieldset>
                 </div>
+       
 
             </article>
         </section>
         <footer>
                 <table border="1">
-                    <th >201968038 한재성</th>
-                    <td></td>
+                   <tr> <td colspan="2">201968038 한재성 </td></tr>
+                   <tr> <td>Email </td> <td>scv829@jj.ac.kr</td></tr>
+                   <tr> <td>Univ.</td> <td>Jeonju Univ. </td></tr>
+                   <tr> <td>Major</td> <td>D.C.E.</td></tr>
                 </table>
         </footer>
-        <div id="b1" style="display: none;">heel</div>
     </body>
 </html>

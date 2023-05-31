@@ -1,5 +1,12 @@
-/* 태그 스타일*/
+/* 폰트 */
+@font-face {
+  font-family: 'SDSamliphopangche_Outline';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+/* 태그 스타일*/
 html{ 
         width: 100%;
         height: 100%;
@@ -8,6 +15,14 @@ html{
         background-image: url(https://cdn.pixabay.com/photo/2020/11/07/01/40/abstract-5719530_1280.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        font: bold;
+
+        font-family: 'SDSamliphopangche_Outline';
+        text-shadow: 
+        0 0 5px  #fff,
+        0 0 10px  #fff,
+        0 0 0px #fff, 
+        0 0 10px  #fff;
 }
 
 body{
@@ -21,8 +36,60 @@ header {
     width: 100%;
     height: 10%;
     text-align: center;
-    background: none;
+    font-size: 300%;
 }
+
+header a {
+  position: relative;
+  top: 30%;
+  text-decoration: none;
+  animation: head-ani 7s infinite;
+}
+
+@keyframes head-ani {
+  0%{
+    text-shadow: 
+    0 0 10px rgb(255, 0, 170),
+    0 0 10px rgb(255, 0, 170),
+    0 0 10px rgb(255, 0, 170),
+    0 0 10px rgb(255, 0, 170);
+  }
+  25%{
+    text-shadow: 
+    0 0 10px rgb(255, 143, 1),
+    0 0 10px rgb(255, 143, 1),
+    0 0 10px rgb(255, 143, 1),
+    0 0 10px rgb(255, 143, 1);
+  }
+  50%{
+    text-shadow: 
+    0 0 10px rgb(170, 255, 1),
+    0 0 10px rgb(170, 255, 1),
+    0 0 10px rgb(170, 255, 1),
+    0 0 10px rgb(170, 255, 1);
+  }
+  75%{
+    text-shadow: 
+    0 0 10px rgb(0, 170, 255),
+    0 0 10px rgb(0, 170, 255),
+    0 0 10px rgb(0, 170, 255),
+    0 0 10px rgb(0, 170, 255);
+  }
+  100%{
+    text-shadow: 
+    0 0 10px rgb(170, 0, 255),
+    0 0 10px rgb(170, 0, 255),
+    0 0 10px rgb(170, 0, 255),
+    0 0 10px rgb(170, 0, 255);
+
+    text-shadow: 
+    0 0 10px rgb(255, 0, 170),
+    0 0 10px rgb(255, 0, 170),
+    0 0 10px rgb(255, 0, 170),
+    0 0 10px rgb(255, 0, 170);
+  }
+
+} 
 
 section{
   width: 100%;
@@ -51,10 +118,6 @@ footer{
 nav {
   position: relative;
   top: 20%;
-  background-image: url(image/asd.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   width: 10%;
   height: 40%;
   float: left;
@@ -65,235 +128,472 @@ nav {
 #horizontal{
   margin: 0 auto;
   padding: 60% 0;
-  width: 70%;
+  width: 100%;
   text-align: center;
   list-style-type: none;
 }
 
 .hor_menu{
+  position: relative;
   text-decoration: none;
   margin: 0 10%;
-  padding: 5px 10px;
+  padding: 0 10px;
   background: none;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
+}
+#l1{ animation: hor-ani 0.8s linear forwards;  }
+#l2{ animation: hor-ani 1s linear forwards; }
+#l3{ animation: hor-ani 1.2s linear forwards; }
+
+/* 수평 메뉴 애니메이션 */
+@keyframes hor-ani {
+	from {
+    filter: blur(0) opacity(0%);
+		transform: translate(0, 50%);
+	}
+  to{
+    filter: blur(0) opacity(100%);
+		transform: translate(0, -50%);
+	}
 }
 
 .hor_menu:hover{
-  background: wheat;
-  color: #060e1b;
+  background-color: rgb(101, 154, 210, 0.2);
+  border-radius: 30%;
 }
 
 
 /*  드롭다운 서브메뉴 */
-.parent-button {
-    top: 50%;
-    position: relative;
-    display: inline-block;
-    background-color: wheat;
-  }
-  
-  .child-buttons {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .parent-button:hover .child-buttons {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .child-button {
-    margin: 0 5px;
-    border-radius: 20%;
-  }
+.dropdown { 
+  display: inline-block; 
+  color: white;
+  margin: auto 10%;
+  background: none;
+  font-size: 150%;
+}
 
-  .child-button:nth-child(1) {
-    background-image: url(https://github.com/scv829/webProgramming/blob/main/image/instargram.png?raw=true);
-    background-size: cover;
-    width: 200%;
-    height: 250%;
-    order: 1;
-  }
+.dropdown-content { 
+  display: none; 
+  position: absolute;
+  background:none; 
+  transform: translateX(-10%);
+}
+
+.dropdown-content a { 
+  display: block; 
+  padding: auto;
+  text-decoration: none;
+  color: black;
   
-  .child-button:nth-child(2) {
-    order: 2;
-  }
-  
-  .child-button:nth-child(3) {
-    order: 3;
-  }
+}
 
-  .child-button:nth-child(4) {
-    order: 4;
-  }
+.dropdown-content a:hover{ background: lavender;}
+.dropdown:hover .dropdown-content { display: block; }
 
-  .child-button:nth-child(5) {
-    order: 5;
-  }
-
-  .child-button:nth-child(6) {
-    order: 6;
-  }
-
-  .child-button:nth-child(7) {
-    order: 7;
-  }
 
 /* 수직 메뉴*/
   #vertical {
     background: none;
-    margin: 0 auto;
     padding: 10px;
     width: 80%;
     text-align: center;
+    overflow: hidden;
   }
 
   .ver_menu{
     color: white;
     text-decoration: none;
     margin: auto 10%;
-    padding: 5px 10px;
+    
     background: none;
+    font-size: 150%;
   }
 
   .ver_menu:hover{
-    background: wheat;
     color: #060e1b;
-
   }
 
-  /* 게시글 */
-   
-  .content > div {
-    display: none;
-  }
-
-  .content > div:target{
-    display: block;
-  }
-
-.planet {
-  float: left;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+/* 테이블 */
+table {
   margin: 0 auto;
+  color: wheat;
+  font-size: 130%;
+  height: 50%;
+  text-shadow: 
+  0 0 10px  #fff,
+  0 0 5px  #fff,
+  0 0 10px  #060e1b, 
+  0 0 0px  #060e1b;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid wheat ;
+  border-bottom: 2px solid wheat ;
+}
+td { border: none; }
+
+/* 컨텐츠 */
+
+/*  
+1. project-planet 스타일 
+2. learned-planet 스타일
+3. input 스타일
+*/
+
+article > div {
+  display: none;
 }
 
-.divS1 {
+article > div:target {
+  display: block;
+  filter: blur(0) opacity(100%); transition: 0.5s;
+}
+
+
+/* 1. project-planet 스타일*/
+#project_planet {
+  border: 3px solid wheat;
+  border-radius: 180%;
+  width: 50%;
+  height: 70%;
+  text-align: center;
+  position: relative;
+  left: 25%;
+  top: 20%;
+  animation: project-ani 5s infinite;
+  background-color: rgb(5, 14, 28, 0.5);
+}
+
+#project_planet hr{
+  position: relative;
+  top: 25%;
+}
+
+#team {
   position: relative;
   top: 10%;
-  left: 15%;
-  float: left;
-  text-align: center;
-  background: none;
-  color: #fff;
-  border-radius: 30%;
-  border: none;
-  padding: 10px 20px;
-  box-shadow: 
-    0 0 5px rgb(18, 201, 143),
-    0 0 10px rgb(18, 201, 143),
-    0 0 0px rgb(18, 201, 143), 
-    0 0 10px rgb(18, 201, 143);
-  background-color:rgba(18,201,143, 0.1);
-
 }
 
-.divS2 {
+#solo{
   position: relative;
-  top: 60%;
-  left: -10%;
-  float: right;
-  text-align: center;
-  padding: auto;
-  width: 20%;
-  height: 30%;
-  background: none;
-  color: #fff;
-  border-radius: 30%;
-  border: none;
-  word-break: break-all;
-
-  box-shadow: 
-    0 0 5px rgb(18, 201, 143),
-    0 0 10px rgb(18, 201, 143),
-    0 0 0px rgb(18, 201, 143), 
-    0 0 10px rgb(18, 201, 143);
-  background-color:rgba(18,201,143, 0.1);
+  top: 35%;
 }
 
-#c {
-  background-image: url(https://github.com/scv829/webProgramming/blob/main/image/c.png?raw=true);
+@keyframes project-ani {
+  0%{
+      border-top: 3px solid #08F7FE;
+      border-bottom: 3px solid #09FBD3;
+      border-left: 3px solid #FE53BB;
+      border-right: 3px solid #F5D300;
+
+      box-shadow: 
+      0 0 2px  #fff,
+      0 0 2px  #fff,
+      0 0 2px #fff, 
+      0 0 2px  #fff;
+
+  }
+  25%{
+     border-left: 3px solid #08F7FE;
+     border-right: 3px solid #09FBD3;
+     border-bottom: 3px solid #FE53BB;
+     border-top: 3px solid #F5D300;
+
+     box-shadow: 
+     0 0 2px  #fff,
+     0 0 2px  #fff,
+     0 0 2px #fff, 
+     0 0 2px  #fff;
+  }
+  50%{
+    border-bottom: 3px solid #08F7FE;
+    border-top: 3px solid #09FBD3;
+    border-right: 3px solid #FE53BB;
+    border-left: 3px solid #F5D300;
+
     box-shadow: 
+    0 0 2px  #fff,
+    0 0 2px  #fff,
+    0 0 2px #fff, 
+    0 0 2px  #fff;
+  }
+  75%{
+    border-right: 3px solid #08F7FE;
+    border-left: 3px solid #09FBD3;
+    border-top: 3px solid #FE53BB;
+    border-bottom: 3px solid #F5D300;
+
+    box-shadow: 
+    0 0 2px  #fff,
+    0 0 2px  #fff,
+    0 0 2px #fff, 
+    0 0 2px  #fff;
+  }
+  100%{
+     border-top: 3px solid #08F7FE;
+     border-bottom: 3px solid #09FBD3;
+     border-left: 3px solid #FE53BB;
+     border-right: 3px solid #F5D300;
+
+     box-shadow: 
+     0 0 2px  #fff,
+     0 0 2px  #fff,
+     0 0 2px #fff, 
+     0 0 2px  #fff;
+  }
+}
+
+
+/* 2. learned-planet 스타일*/
+
+#learned_planet {
+  float: left;
+  margin: 0 auto;
+  width: 100%; height: 100%;
+  animation: learned-planet-ani 1s linear forwards; /* 애니메이션 적용 */
+}
+
+/* learned-planet 애니메이션 */
+@keyframes learned-planet-ani {
+	from {
+		transform: translate(0, 0);
+    filter: blur(0) opacity(0%); transition: 1s;
+	}
+	to {
+		transform: translate(0, 50px);
+	}
+}
+
+
+/* learned-planet > 공통 */
+
+.detail{
+  border-radius: 10%;
+  position: absolute;
+  display: none;
+  width: 15%;
+  height: 15%;
+}
+
+.detail p {
+  text-align: center;
+  word-break:break-all;
+  overflow: hidden;
+}
+
+.p1{
+  padding-top: 10%;
+  text-align: center;
+
+  text-shadow: 
+    0 0 5px  #fff,
+    0 0 10px  #fff,
+    0 0 5px #fff, 
+    0 0 10px  #fff;
+}
+
+.imgBox, .imgBox img {
+  max-height: 100%;
+  text-align: center;
+}
+
+#c:hover .detail , 
+#cpp:hover .detail ,
+#csharp:hover .detail ,
+#java:hover .detail ,
+#android:hover .detail ,
+#linux:hover .detail ,
+#swift:hover .detail
+{
+  display: block;
+}
+
+.planet:hover .imgBox {filter: blur(3px)  opacity(50%); transition: 0.5s;}
+.planet:hover .detail {filter: blur(0) opacity(100%); transition: 0.5s;}
+
+.planet .detail{filter: blur(0) opacity(0%); transition: 0.5s;}
+.planet .imgBox {filter: blur(0) opacity(100%); transition: 0.5s;}
+
+
+
+/* learned-planet > c 컨텐츠 스타일 */
+#c .imgBox, #c .detail{
+    position: absolute;
+    top: 0;
+    width: 15%;
+    height: 15%;
+}
+#c .detail{
+  box-shadow: 
     0 0 5px  rgb(101, 78, 210),
     0 0 10px  rgb(101, 78, 210),
     0 0 0px  rgb(101, 78, 210), 
     0 0 10px  rgb(101, 78, 210);
-    border-radius: 5%;
 }
-
-#cpp {
-  background-image: url(https://github.com/scv829/webProgramming/blob/main/image/cpp.png?raw=true);
+/* learned-planet > cpp 컨텐츠 스타일 */
+#cpp .imgBox, #cpp .detail{
+  position: absolute;
+  top: 70%; left: 80%;
+  width: 40%;
+  height: 40%;
+}
+#cpp .detail{
   box-shadow: 
   0 0 5px  rgb(101, 154, 210),
   0 0 10px   rgb(101, 154, 210),
   0 0 0px   rgb(101, 154, 210), 
   0 0 10px   rgb(101, 154, 210);
-  border-radius: 5%;
 }
 
-#csharp {
-  background-image: url(https://github.com/scv829/webProgramming/blob/main/image/csharp.png?raw=true);
+/* learned-planet > csharp 컨텐츠 스타일 */
+#csharp .imgBox, #csharp .detail{
+    position: absolute;
+    top: 20%; left: 20%;
+    width: 20%;
+    height: 20%;
+}
+#csharp .detail{
   box-shadow: 
-  0 0 5px  rgb(118, 0, 149),
-  0 0 10px   rgb(118, 0, 149),
-  0 0 0px   rgb(118, 0, 149), 
-  0 0 10px   rgb(118, 0, 149);
-  border-radius: 5%;
+    0 0 5px  rgb(118, 0, 149),
+    0 0 10px   rgb(118, 0, 149),
+    0 0 0px   rgb(118, 0, 149), 
+    0 0 10px   rgb(118, 0, 149);
 }
 
-#java {
-  background-image: url(https://github.com/scv829/webProgramming/blob/main/image/java.png?raw=true);
+/* learned-planet > java 컨텐츠 스타일 */
+#java .imgBox, #java .detail{
+  position: absolute;
+  top: 35%; left: 70%;
+  width: 20%;
+  height: 20%;
+}
+#java .detail{
   box-shadow: 
-  0 0 5px  rgb(255, 234, 204),
-  0 0 10px   rgb(255, 234, 204),
-  0 0 0px   rgb(255, 234, 204), 
-  0 0 10px   rgb(255, 234, 204);
-  border-radius: 5%;
+    0 0 5px  rgb(255, 234, 204),
+    0 0 10px   rgb(255, 234, 204),
+    0 0 0px   rgb(255, 234, 204), 
+    0 0 10px   rgb(255, 234, 204);
 }
 
-#swift {
-  background-image: url(https://github.com/scv829/webProgramming/blob/main/image/swift.png?raw=true);
+/* learned-planet > swift 컨텐츠 스타일 */
+#swift .imgBox , #swift .detail{
+  position: absolute;
+  top: 25%; left: 100%;
+  width: 32% ;
+  height: 20%;
+}
+#swift .detail{
   box-shadow: 
   0 0 5px  rgb(250, 148, 64),
   0 0 10px   rgb(250, 148, 64),
   0 0 0px   rgb(250, 148, 64), 
   0 0 10px   rgb(250, 148, 64);
-  border-radius: 5%;
 }
 
-#android {
-  background-image: url(https://github.com/scv829/webProgramming/blob/main/image/android.png?raw=true);
+/* learned-planet > android 컨텐츠 스타일 */
+#android .imgBox , #android .detail{
+  position: absolute;
+  top: 0; left: 40%;
+  width: 48% ;
+  height: 30%;
+}
+#android .detail{
   box-shadow: 
   0 0 5px  rgb(162, 255, 106),
   0 0 10px   rgb(162, 255, 106),
   0 0 0px   rgb(162, 255, 106), 
   0 0 10px   rgb(162, 255, 106);
-  border-radius: 5%;
 }
 
-#linux {
-  background-image: url(https://github.com/scv829/webProgramming/blob/main/image/linux.png?raw=true);
+/* learned-planet > linux 컨텐츠 스타일 */
+#linux .imgBox, #linux .detail{
+  position: absolute;
+  top: 50%; left: 0%;
+  width: 72% ;
+  height: 45%;
+}
+
+#linux .detail{
   box-shadow: 
   0 0 5px  rgb(255, 231, 73),
   0 0 10px   rgb(255, 231, 73),
   0 0 0px   rgb(255, 231, 73), 
   0 0 10px   rgb(255, 231, 73);
+}
+
+/* 3. input 스타일*/
+
+/* 로그인 | 회원가입 애니메이션 */
+@keyframes input-ani {
+  0% {
+    box-shadow: 
+    0 0 10px rgb(255,255,102),
+    0 0 10px   rgb(252, 110, 34),
+    0 0 10px   rgb(255, 20, 147), 
+    0 0 10px   rgb(194, 76, 246);
+
+  }
+  33% {
+    box-shadow:
+    0 0 10px   rgb(194, 76, 246),
+    0 0 10px  rgb(255,255,102),
+    0 0 10px   rgb(252, 110, 34),
+    0 0 10px   rgb(255, 20, 147); 
+  }
+  66% {
+    box-shadow: 
+    0 0 10px   rgb(255, 20, 147), 
+    0 0 10px   rgb(194, 76, 246),
+    0 0 10px  rgb(255,255,102),
+    0 0 10px   rgb(252, 110, 34);
+  }
+  100% {
+    box-shadow: 
+    0 0 10px  rgb(252, 110, 34),
+    0 0 10px   rgb(255, 20, 147), 
+    0 0 10px   rgb(194, 76, 246),
+    0 0 10px  rgb(255,255,102);
+  }
+}
+
+/* 
+.sign: 공통으로 사용하는 스타일 
+#signip : 회원가입만 사용하는 스타일
+*/
+.sign{ text-align: center;
+  height: 80%;
+}
+.sign fieldset{
+  transform: translateX();
+  width: 40%;
+  height: auto;
+  background: #060e1b;
+  animation: input-ani 5s infinite;
   border-radius: 5%;
+  margin: 0 auto;
+  height: 50%;
+  color:tomato
+}
+.sign div{
+  padding: 7% 0;
+}
+.sign input{
+  background: #060e1b;
+  animation: input-ani 5s infinite;
+  border-radius: 5%;
+  color: #fff;
+}
+
+#signup fieldset{
+  color: aqua;
+  transform: translateX();
+  width: 40%;
+  background: #060e1b;
+  animation: input-ani 5s infinite;
+  border-radius: 5%;
+  margin: 0 auto;
+  padding-bottom: 20%;
+}
+#signup div{
+  padding: 3%;
 }

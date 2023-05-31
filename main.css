@@ -5,116 +5,124 @@
   font-weight: normal;
   font-style: normal;
 }
-
-/* 태그 스타일*/
-html{ 
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        background: #060e1b;
-        background-image: url(https://cdn.pixabay.com/photo/2020/11/07/01/40/abstract-5719530_1280.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        font: bold;
-
-        font-family: 'SDSamliphopangche_Outline';
-        text-shadow: 
-        0 0 5px  #fff,
-        0 0 10px  #fff,
-        0 0 0px #fff, 
-        0 0 10px  #fff;
+/* 태그 스타일 */
+/* 스타일의 사용되는 그림 중 html의 배경 이미지를 제외하고 모두 깃허브 이미지 파일을 주소로 불러서 활용하였습니다 */ 
+/* html */
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /* 배경 이미지를 url로 불러오지만 해당 주소가 바뀐 경우 그림이 안보여 흰색 배경이 나오는걸 방지하기 위해 배경값을 따로 줌*/ 
+  background: #060e1b;
+  background-image: url(https://cdn.pixabay.com/photo/2020/11/07/01/40/abstract-5719530_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 폰트 사용 */
+  font: bold;
+  font-family: 'SDSamliphopangche_Outline';
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 0px #fff,
+    0 0 10px #fff;
 }
-
-body{
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
+/* body */
+body {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
 }
-
+/* header */
 header {
-    background: none;
-    width: 100%;
-    height: 10%;
-    text-align: center;
-    font-size: 300%;
+  background: none;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  font-size: 300%;
 }
-
+/* 타이틀에 관한 스타일 */
 header a {
   position: relative;
   top: 30%;
   text-decoration: none;
   animation: head-ani 7s infinite;
 }
-
+/* 타이틀에 적용할 애니메이션 */
 @keyframes head-ani {
-  0%{
-    text-shadow: 
-    0 0 10px rgb(255, 0, 170),
-    0 0 10px rgb(255, 0, 170),
-    0 0 10px rgb(255, 0, 170),
-    0 0 10px rgb(255, 0, 170);
-  }
-  25%{
-    text-shadow: 
-    0 0 10px rgb(255, 143, 1),
-    0 0 10px rgb(255, 143, 1),
-    0 0 10px rgb(255, 143, 1),
-    0 0 10px rgb(255, 143, 1);
-  }
-  50%{
-    text-shadow: 
-    0 0 10px rgb(170, 255, 1),
-    0 0 10px rgb(170, 255, 1),
-    0 0 10px rgb(170, 255, 1),
-    0 0 10px rgb(170, 255, 1);
-  }
-  75%{
-    text-shadow: 
-    0 0 10px rgb(0, 170, 255),
-    0 0 10px rgb(0, 170, 255),
-    0 0 10px rgb(0, 170, 255),
-    0 0 10px rgb(0, 170, 255);
-  }
-  100%{
-    text-shadow: 
-    0 0 10px rgb(170, 0, 255),
-    0 0 10px rgb(170, 0, 255),
-    0 0 10px rgb(170, 0, 255),
-    0 0 10px rgb(170, 0, 255);
-
-    text-shadow: 
-    0 0 10px rgb(255, 0, 170),
-    0 0 10px rgb(255, 0, 170),
-    0 0 10px rgb(255, 0, 170),
-    0 0 10px rgb(255, 0, 170);
+  0% {
+    text-shadow:
+      0 0 10px rgb(255, 0, 170),
+      0 0 10px rgb(255, 0, 170),
+      0 0 10px rgb(255, 0, 170),
+      0 0 10px rgb(255, 0, 170);
   }
 
-} 
+  25% {
+    text-shadow:
+      0 0 10px rgb(255, 143, 1),
+      0 0 10px rgb(255, 143, 1),
+      0 0 10px rgb(255, 143, 1),
+      0 0 10px rgb(255, 143, 1);
+  }
 
-section{
+  50% {
+    text-shadow:
+      0 0 10px rgb(170, 255, 1),
+      0 0 10px rgb(170, 255, 1),
+      0 0 10px rgb(170, 255, 1),
+      0 0 10px rgb(170, 255, 1);
+  }
+
+  75% {
+    text-shadow:
+      0 0 10px rgb(0, 170, 255),
+      0 0 10px rgb(0, 170, 255),
+      0 0 10px rgb(0, 170, 255),
+      0 0 10px rgb(0, 170, 255);
+  }
+
+  100% {
+    text-shadow:
+      0 0 10px rgb(170, 0, 255),
+      0 0 10px rgb(170, 0, 255),
+      0 0 10px rgb(170, 0, 255),
+      0 0 10px rgb(170, 0, 255);
+
+    text-shadow:
+      0 0 10px rgb(255, 0, 170),
+      0 0 10px rgb(255, 0, 170),
+      0 0 10px rgb(255, 0, 170),
+      0 0 10px rgb(255, 0, 170);
+  }
+
+}
+
+/* section */
+section {
   width: 100%;
   height: 80%;
   background: none;
 }
-
+/* article */
 article {
-  margin: 0 auto; 
-  width: 70%; 
+  margin: 0 auto;
+  width: 70%;
   height: 80%;
   position: relative;
   top: 6%;
 }
 
-
-footer{
+/* footer */
+footer {
   width: 100%;
   height: 10%;
-  background:none;
+  background: none;
   margin: 0 auto;
   text-align: center;
   font-size: 80%;
 }
 
+/* nav */
 nav {
   position: relative;
   top: 20%;
@@ -124,8 +132,9 @@ nav {
 }
 
 
-/* 수평 메뉴*/
-#horizontal{
+/* 수직 메뉴*/
+/* 메뉴 담는 곳*/ 
+#vertical {
   margin: 0 auto;
   padding: 60% 0;
   width: 100%;
@@ -133,7 +142,8 @@ nav {
   list-style-type: none;
 }
 
-.hor_menu{
+/* 메뉴 */
+.ver_menu {
   position: relative;
   text-decoration: none;
   margin: 0 10%;
@@ -142,77 +152,98 @@ nav {
   width: 100%;
   height: 100%;
 }
-#l1{ animation: hor-ani 0.8s linear forwards;  }
-#l2{ animation: hor-ani 1s linear forwards; }
-#l3{ animation: hor-ani 1.2s linear forwards; }
 
-/* 수평 메뉴 애니메이션 */
-@keyframes hor-ani {
-	from {
-    filter: blur(0) opacity(0%);
-		transform: translate(0, 50%);
-	}
-  to{
-    filter: blur(0) opacity(100%);
-		transform: translate(0, -50%);
-	}
+/* 애니메이션 등록 */ 
+#l1 {
+  animation: ver-ani 0.8s linear forwards;
 }
 
-.hor_menu:hover{
+#l2 {
+  animation: ver-ani 1s linear forwards;
+}
+
+#l3 {
+  animation: ver-ani 1.2s linear forwards;
+}
+
+/* 수직 메뉴 애니메이션 */
+@keyframes ver-ani {
+  from {
+    filter: blur(0) opacity(0%);
+    transform: translate(0, 50%);
+  }
+
+  to {
+    filter: blur(0) opacity(100%);
+    transform: translate(0, -50%);
+  }
+}
+
+/* 수직 메뉴 hover 했을 때 */ 
+.ver_menu:hover {
   background-color: rgb(101, 154, 210, 0.2);
   border-radius: 30%;
 }
 
 
 /*  드롭다운 서브메뉴 */
-.dropdown { 
-  display: inline-block; 
+/* 메뉴 담는 곳 */
+.dropdown {
+  display: inline-block;
   color: white;
   margin: auto 10%;
   background: none;
   font-size: 150%;
 }
 
-.dropdown-content { 
-  display: none; 
+/* 부모 메뉴 */
+.dropdown-content {
+  display: none;
   position: absolute;
-  background:none; 
+  background: none;
   transform: translateX(-10%);
 }
 
-.dropdown-content a { 
-  display: block; 
+/* 서브 메뉴 */
+.dropdown-content a {
+  display: block;
   padding: auto;
   text-decoration: none;
   color: black;
-  
+
 }
 
-.dropdown-content a:hover{ background: lavender;}
-.dropdown:hover .dropdown-content { display: block; }
+.dropdown-content a:hover {
+  background: lavender;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
-/* 수직 메뉴*/
-  #vertical {
-    background: none;
-    padding: 10px;
-    width: 80%;
-    text-align: center;
-    overflow: hidden;
-  }
+/* 수평 메뉴*/
+/* 메뉴 담는 곳 */
+#horizontal {
+  background: none;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  overflow: hidden;
+}
+/* 메뉴 */ 
+.hor_menu {
+  color: white;
+  text-decoration: none;
+  margin: auto 10%;
 
-  .ver_menu{
-    color: white;
-    text-decoration: none;
-    margin: auto 10%;
-    
-    background: none;
-    font-size: 150%;
-  }
+  background: none;
+  font-size: 150%;
+}
 
-  .ver_menu:hover{
-    color: #060e1b;
-  }
+.hor_menu:hover {
+  color: #060e1b;
+}
 
 /* 테이블 */
 table {
@@ -220,37 +251,42 @@ table {
   color: wheat;
   font-size: 130%;
   height: 50%;
-  text-shadow: 
-  0 0 10px  #fff,
-  0 0 5px  #fff,
-  0 0 10px  #060e1b, 
-  0 0 0px  #060e1b;
+  text-shadow:
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 10px #060e1b,
+    0 0 0px #060e1b;
   border-left: none;
   border-right: none;
-  border-top: 2px solid wheat ;
-  border-bottom: 2px solid wheat ;
+  border-top: 2px solid wheat;
+  border-bottom: 2px solid wheat;
 }
-td { border: none; }
+
+td {
+  border: none;
+}
 
 /* 컨텐츠 */
-
-/*  
-1. project-planet 스타일 
-2. learned-planet 스타일
-3. input 스타일
-*/
-
-article > div {
+article>div {
   display: none;
 }
 
-article > div:target {
+article>div:target {
   display: block;
-  filter: blur(0) opacity(100%); transition: 0.5s;
+  filter: blur(0) opacity(100%);
+  transition: 0.5s;
 }
 
 
+/*  
+  1. project-planet 스타일 
+  2. learned-planet 스타일
+  3. input 스타일
+*/
+
 /* 1. project-planet 스타일*/
+
+/* project_planet 본체*/ 
 #project_planet {
   border: 3px solid wheat;
   border-radius: 180%;
@@ -263,263 +299,303 @@ article > div:target {
   animation: project-ani 5s infinite;
   background-color: rgb(5, 14, 28, 0.5);
 }
-
-#project_planet hr{
+/* project_planet안에 hr 태그*/
+#project_planet hr {
   position: relative;
   top: 25%;
 }
-
+/* project_planet 팀 프로젝트 스타일 */
 #team {
   position: relative;
   top: 10%;
 }
-
-#solo{
+/* project_planet 개인 프로젝트 스타일 */
+#solo {
   position: relative;
   top: 35%;
 }
-
+/* project_planet의 테두리에 나타날 애니메이션 */
 @keyframes project-ani {
-  0%{
-      border-top: 3px solid #08F7FE;
-      border-bottom: 3px solid #09FBD3;
-      border-left: 3px solid #FE53BB;
-      border-right: 3px solid #F5D300;
+  0% {
+    border-top: 3px solid #08F7FE;
+    border-bottom: 3px solid #09FBD3;
+    border-left: 3px solid #FE53BB;
+    border-right: 3px solid #F5D300;
 
-      box-shadow: 
-      0 0 2px  #fff,
-      0 0 2px  #fff,
-      0 0 2px #fff, 
-      0 0 2px  #fff;
-
+    box-shadow:
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff;
   }
-  25%{
-     border-left: 3px solid #08F7FE;
-     border-right: 3px solid #09FBD3;
-     border-bottom: 3px solid #FE53BB;
-     border-top: 3px solid #F5D300;
 
-     box-shadow: 
-     0 0 2px  #fff,
-     0 0 2px  #fff,
-     0 0 2px #fff, 
-     0 0 2px  #fff;
+  25% {
+    border-left: 3px solid #08F7FE;
+    border-right: 3px solid #09FBD3;
+    border-bottom: 3px solid #FE53BB;
+    border-top: 3px solid #F5D300;
+
+    box-shadow:
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff;
   }
-  50%{
+
+  50% {
     border-bottom: 3px solid #08F7FE;
     border-top: 3px solid #09FBD3;
     border-right: 3px solid #FE53BB;
     border-left: 3px solid #F5D300;
 
-    box-shadow: 
-    0 0 2px  #fff,
-    0 0 2px  #fff,
-    0 0 2px #fff, 
-    0 0 2px  #fff;
+    box-shadow:
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff;
   }
-  75%{
+
+  75% {
     border-right: 3px solid #08F7FE;
     border-left: 3px solid #09FBD3;
     border-top: 3px solid #FE53BB;
     border-bottom: 3px solid #F5D300;
 
-    box-shadow: 
-    0 0 2px  #fff,
-    0 0 2px  #fff,
-    0 0 2px #fff, 
-    0 0 2px  #fff;
+    box-shadow:
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff;
   }
-  100%{
-     border-top: 3px solid #08F7FE;
-     border-bottom: 3px solid #09FBD3;
-     border-left: 3px solid #FE53BB;
-     border-right: 3px solid #F5D300;
 
-     box-shadow: 
-     0 0 2px  #fff,
-     0 0 2px  #fff,
-     0 0 2px #fff, 
-     0 0 2px  #fff;
+  100% {
+    border-top: 3px solid #08F7FE;
+    border-bottom: 3px solid #09FBD3;
+    border-left: 3px solid #FE53BB;
+    border-right: 3px solid #F5D300;
+
+    box-shadow:
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff;
   }
 }
 
 
 /* 2. learned-planet 스타일*/
-
+/* learned-planet 본체 */
 #learned_planet {
   float: left;
   margin: 0 auto;
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   animation: ani 1s linear forwards; /* 애니메이션 적용 */
 }
 
 /* learned-planet 애니메이션 */
-/* 등장 애니메이션 */
+/* 천천히 나타나는 모션 */
 @keyframes ani {
-	from {
-		transform: translate(0, 0);
-    filter: blur(0) opacity(0%); transition: 1s;
-	}
-	to {
-		transform: translate(0, 50px);
-	}
+  from {
+    transform: translate(0, 0);
+    filter: blur(0) opacity(0%);
+    transition: 1s;
+  }
+  to {
+    transform: translate(0, 50px);
+  }
 }
 
 
 /* learned-planet > 공통 */
+/* learned-planet 안에 있는 div가 공용으로 사용하는 클래스 정의*/ 
 
-.detail{
+/* 제목+내용이 나오는 곳 */ 
+.detail {
   border-radius: 10%;
   position: absolute;
   display: none;
   width: 15%;
   height: 15%;
 }
-
+/* 제목 */ 
 .detail p {
   text-align: center;
-  word-break:break-all;
+  word-break: break-all;
   overflow: hidden;
 }
-
-.p1{
+/* 내용 */
+.p1 {
   padding-top: 10%;
   text-align: center;
 
-  text-shadow: 
-    0 0 5px  #fff,
-    0 0 10px  #fff,
-    0 0 5px #fff, 
-    0 0 10px  #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 10px #fff;
 }
-
-.imgBox, .imgBox img {
+/* img가 들어가 div 와 img */ 
+.imgBox,
+.imgBox img {
   max-height: 100%;
   text-align: center;
 }
-
-#c:hover .detail , 
-#cpp:hover .detail ,
-#csharp:hover .detail ,
-#java:hover .detail ,
-#android:hover .detail ,
-#linux:hover .detail ,
-#swift:hover .detail
-{
+/* 각 언어에 대한 정보를 보여주기 위한 스타일 */ 
+#c:hover .detail,
+#cpp:hover .detail,
+#csharp:hover .detail,
+#java:hover .detail,
+#android:hover .detail,
+#linux:hover .detail,
+#swift:hover .detail {
   display: block;
 }
 
-.planet:hover .imgBox {filter: blur(3px)  opacity(50%); transition: 0.5s;}
-.planet:hover .detail {filter: blur(0) opacity(100%); transition: 0.5s;}
-
-.planet .detail{filter: blur(0) opacity(0%); transition: 0.5s;}
-.planet .imgBox {filter: blur(0) opacity(100%); transition: 0.5s;}
-
-
+/* 이미지 투명도 변화 hover일 때 */
+.planet:hover .imgBox {
+  filter: blur(3px) opacity(50%);
+  transition: 0.5s;
+}
+/* 내용 투명도 변화 hover일 때 */
+.planet:hover .detail {
+  filter: blur(0) opacity(100%);
+  transition: 0.5s;
+}
+/* 이미지 투명도 변화 */
+.planet .detail {
+  filter: blur(0) opacity(0%);
+  transition: 0.5s;
+}
+/* 내용 투명도 변화 hover일 때 */
+.planet .imgBox {
+  filter: blur(0) opacity(100%);
+  transition: 0.5s;
+}
 
 /* learned-planet > c 컨텐츠 스타일 */
-#c .imgBox, #c .detail{
-    position: absolute;
-    top: 0;
-    width: 15%;
-    height: 15%;
-}
-#c .detail{
-  box-shadow: 
-    0 0 5px  rgb(101, 78, 210),
-    0 0 10px  rgb(101, 78, 210),
-    0 0 0px  rgb(101, 78, 210), 
-    0 0 10px  rgb(101, 78, 210);
-}
-/* learned-planet > cpp 컨텐츠 스타일 */
-#cpp .imgBox, #cpp .detail{
+#c .imgBox,
+#c .detail {
   position: absolute;
-  top: 70%; left: 80%;
+  top: 0;
+  width: 15%;
+  height: 15%;
+}
+
+#c .detail {
+  box-shadow:
+    0 0 5px rgb(101, 78, 210),
+    0 0 10px rgb(101, 78, 210),
+    0 0 0px rgb(101, 78, 210),
+    0 0 10px rgb(101, 78, 210);
+}
+
+/* learned-planet > cpp 컨텐츠 스타일 */
+#cpp .imgBox,
+#cpp .detail {
+  position: absolute;
+  top: 70%;
+  left: 80%;
   width: 40%;
   height: 40%;
 }
-#cpp .detail{
-  box-shadow: 
-  0 0 5px  rgb(101, 154, 210),
-  0 0 10px   rgb(101, 154, 210),
-  0 0 0px   rgb(101, 154, 210), 
-  0 0 10px   rgb(101, 154, 210);
+
+#cpp .detail {
+  box-shadow:
+    0 0 5px rgb(101, 154, 210),
+    0 0 10px rgb(101, 154, 210),
+    0 0 0px rgb(101, 154, 210),
+    0 0 10px rgb(101, 154, 210);
 }
 
 /* learned-planet > csharp 컨텐츠 스타일 */
-#csharp .imgBox, #csharp .detail{
-    position: absolute;
-    top: 20%; left: 20%;
-    width: 20%;
-    height: 20%;
-}
-#csharp .detail{
-  box-shadow: 
-    0 0 5px  rgb(118, 0, 149),
-    0 0 10px   rgb(118, 0, 149),
-    0 0 0px   rgb(118, 0, 149), 
-    0 0 10px   rgb(118, 0, 149);
-}
-
-/* learned-planet > java 컨텐츠 스타일 */
-#java .imgBox, #java .detail{
+#csharp .imgBox,
+#csharp .detail {
   position: absolute;
-  top: 35%; left: 70%;
+  top: 20%;
+  left: 20%;
   width: 20%;
   height: 20%;
 }
-#java .detail{
-  box-shadow: 
-    0 0 5px  rgb(255, 234, 204),
-    0 0 10px   rgb(255, 234, 204),
-    0 0 0px   rgb(255, 234, 204), 
-    0 0 10px   rgb(255, 234, 204);
+
+#csharp .detail {
+  box-shadow:
+    0 0 5px rgb(118, 0, 149),
+    0 0 10px rgb(118, 0, 149),
+    0 0 0px rgb(118, 0, 149),
+    0 0 10px rgb(118, 0, 149);
+}
+
+/* learned-planet > java 컨텐츠 스타일 */
+#java .imgBox,
+#java .detail {
+  position: absolute;
+  top: 35%;
+  left: 70%;
+  width: 20%;
+  height: 20%;
+}
+
+#java .detail {
+  box-shadow:
+    0 0 5px rgb(255, 234, 204),
+    0 0 10px rgb(255, 234, 204),
+    0 0 0px rgb(255, 234, 204),
+    0 0 10px rgb(255, 234, 204);
 }
 
 /* learned-planet > swift 컨텐츠 스타일 */
-#swift .imgBox , #swift .detail{
+#swift .imgBox,
+#swift .detail {
   position: absolute;
-  top: 25%; left: 100%;
-  width: 32% ;
+  top: 25%;
+  left: 100%;
+  width: 32%;
   height: 20%;
 }
-#swift .detail{
-  box-shadow: 
-  0 0 5px  rgb(250, 148, 64),
-  0 0 10px   rgb(250, 148, 64),
-  0 0 0px   rgb(250, 148, 64), 
-  0 0 10px   rgb(250, 148, 64);
+
+#swift .detail {
+  box-shadow:
+    0 0 5px rgb(250, 148, 64),
+    0 0 10px rgb(250, 148, 64),
+    0 0 0px rgb(250, 148, 64),
+    0 0 10px rgb(250, 148, 64);
 }
 
 /* learned-planet > android 컨텐츠 스타일 */
-#android .imgBox , #android .detail{
+#android .imgBox,
+#android .detail {
   position: absolute;
-  top: 0; left: 40%;
-  width: 48% ;
+  top: 0;
+  left: 40%;
+  width: 48%;
   height: 30%;
 }
-#android .detail{
-  box-shadow: 
-  0 0 5px  rgb(162, 255, 106),
-  0 0 10px   rgb(162, 255, 106),
-  0 0 0px   rgb(162, 255, 106), 
-  0 0 10px   rgb(162, 255, 106);
+
+#android .detail {
+  box-shadow:
+    0 0 5px rgb(162, 255, 106),
+    0 0 10px rgb(162, 255, 106),
+    0 0 0px rgb(162, 255, 106),
+    0 0 10px rgb(162, 255, 106);
 }
 
 /* learned-planet > linux 컨텐츠 스타일 */
-#linux .imgBox, #linux .detail{
+#linux .imgBox,
+#linux .detail {
   position: absolute;
-  top: 50%; left: 0%;
-  width: 72% ;
+  top: 50%;
+  left: 0%;
+  width: 72%;
   height: 45%;
 }
 
-#linux .detail{
-  box-shadow: 
-  0 0 5px  rgb(255, 231, 73),
-  0 0 10px   rgb(255, 231, 73),
-  0 0 0px   rgb(255, 231, 73), 
-  0 0 10px   rgb(255, 231, 73);
+#linux .detail {
+  box-shadow:
+    0 0 5px rgb(255, 231, 73),
+    0 0 10px rgb(255, 231, 73),
+    0 0 0px rgb(255, 231, 73),
+    0 0 10px rgb(255, 231, 73);
 }
 
 /* 3. input 스타일*/
@@ -527,33 +603,36 @@ article > div:target {
 /* 로그인 | 회원가입 애니메이션 */
 @keyframes input-ani {
   0% {
-    box-shadow: 
-    0 0 10px rgb(255,255,102),
-    0 0 10px   rgb(252, 110, 34),
-    0 0 10px   rgb(255, 20, 147), 
-    0 0 10px   rgb(194, 76, 246);
+    box-shadow:
+      0 0 10px rgb(255, 255, 102),
+      0 0 10px rgb(252, 110, 34),
+      0 0 10px rgb(255, 20, 147),
+      0 0 10px rgb(194, 76, 246);
 
   }
+
   33% {
     box-shadow:
-    0 0 10px   rgb(194, 76, 246),
-    0 0 10px  rgb(255,255,102),
-    0 0 10px   rgb(252, 110, 34),
-    0 0 10px   rgb(255, 20, 147); 
+      0 0 10px rgb(194, 76, 246),
+      0 0 10px rgb(255, 255, 102),
+      0 0 10px rgb(252, 110, 34),
+      0 0 10px rgb(255, 20, 147);
   }
+
   66% {
-    box-shadow: 
-    0 0 10px   rgb(255, 20, 147), 
-    0 0 10px   rgb(194, 76, 246),
-    0 0 10px  rgb(255,255,102),
-    0 0 10px   rgb(252, 110, 34);
+    box-shadow:
+      0 0 10px rgb(255, 20, 147),
+      0 0 10px rgb(194, 76, 246),
+      0 0 10px rgb(255, 255, 102),
+      0 0 10px rgb(252, 110, 34);
   }
+
   100% {
-    box-shadow: 
-    0 0 10px  rgb(252, 110, 34),
-    0 0 10px   rgb(255, 20, 147), 
-    0 0 10px   rgb(194, 76, 246),
-    0 0 10px  rgb(255,255,102);
+    box-shadow:
+      0 0 10px rgb(252, 110, 34),
+      0 0 10px rgb(255, 20, 147),
+      0 0 10px rgb(194, 76, 246),
+      0 0 10px rgb(255, 255, 102);
   }
 }
 
@@ -561,10 +640,12 @@ article > div:target {
 .sign: 공통으로 사용하는 스타일 
 #signip : 회원가입만 사용하는 스타일
 */
-.sign{ text-align: center;
+.sign {
+  text-align: center;
   height: 80%;
 }
-.sign fieldset{
+
+.sign fieldset {
   transform: translateX();
   width: 40%;
   height: auto;
@@ -573,20 +654,22 @@ article > div:target {
   border-radius: 5%;
   margin: 0 auto;
   height: 50%;
-  color:tomato
+  color: blue
 }
-.sign div{
+
+.sign div {
   padding: 7% 0;
 }
-.sign input{
+
+.sign input {
   background: #060e1b;
   animation: input-ani 5s infinite;
   border-radius: 5%;
   color: #fff;
 }
 
-#signup fieldset{
-  color: aqua;
+#signup fieldset {
+  color: blueviolet;
   transform: translateX();
   width: 40%;
   background: #060e1b;
@@ -595,6 +678,7 @@ article > div:target {
   margin: 0 auto;
   padding-bottom: 20%;
 }
-#signup div{
+
+#signup div {
   padding: 3%;
 }

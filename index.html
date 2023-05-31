@@ -1,162 +1,895 @@
 <!DOCTYPE html>
 <html id="html">
-    <head>
-        <meta charset="utf-8">
-        <link href="main.css" rel="stylesheet" type="text/css" />
-        <style>
-            
-        </style>
-    </head>
-    <body>
-        <header>
-                <a href="index.html">shiniper's home</a>
-        </header>
-        <nav>
-            <ul id="horizontal">
-                <li> <a href="http://www.github.com" target="_blank"><img src="https://github.com/scv829/webProgramming/blob/main/image/github.png?raw=true"  class="hor_menu" id="l1"> </a> </li>
-                <li> <a href="http://www.facebook.com" target="_blank"><img src="https://github.com/scv829/webProgramming/blob/main/image/facebook.png?raw=true" class="hor_menu " id="l2"> </a> </li>
-                <li> <a href="http://www.instagram.com/" target="_blank"><img src="https://github.com/scv829/webProgramming/blob/main/image/instargram.png?raw=true"  class="hor_menu" id="l3"> </a> </li>
-            </ul>
-        </nav>
-        <section>
-            <div id="vertical">
-                <a href="#project_planet" class="ver_menu">project planet</a>
-                <a href="#learned_planet" class="ver_menu">learned planet</a>
-                <div class="dropdown">input
-                    <div class="dropdown-content">
-                        <a href="#login">login</a>
-                        <a href="#signup">signup</a>
-                    </div>
-                </div>
-                
-            </div>
-            <!-- 컨텐츠 나오는 공간 -->
-            <article>
-                <!-- 1. project_planet-->
-                <div id="project_planet">
-                    <!-- 팀 프로젝트-->
-                    <div id="team">
-                        <h1>팀 프로젝트</h1> <br>
-                        <b>c언어 - 대학생활도우미 앱</b>
-                    </div>
-                    <hr>
-                    <!-- 개인 프로젝트-->
-                    <div id="solo">
-                        <b>Java - 학교 배경 길찾기 게임 <br><br>
-                        Android - 자동화 플랜 앱 개발 <br> <br>
-                        linux - DB, apache 서버 구동</b><br>
-                        <h1>개인 프로젝트</h1>
-                    </div>
-                </div>
-                <!-- 2. learned_planet -->
-                <div id="learned_planet">
-                    <!-- c 컨텐츠 -->
-                    <div class="planet" id="c">
-                        <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/c.png?raw=true" ></div>
-                        <div class="detail">
-                            <span>
-                                <h1> <p>C</p> </h1>
-                                <p class="p1">printf("한재성");</p>
-                            </span>
-                        </div>
-                    </div>
-                    <!-- c++ 컨텐츠 -->
-                    <div class="planet" id="cpp">
-                        <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/cpp.png?raw=true" ></div>
-                        <div class="detail">
-                            <span>
-                                <h1> <p>C++</p> </h1>
-                                <p class="p1">std::cont <<  "한재성"  << std::endl;</p>
-                            </span>
-                        </div>
-                    </div>
-                    <!-- c# 컨텐츠 -->
-                    <div class="planet" id="csharp">
-                        <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/csharp.png?raw=true" ></div>
-                        <div class="detail">
-                            <span>
-                                <h1> <p>C#</p> </h1>
-                                <p class="p1">Console.Write("한재성");</p>
-                            </span>
-                        </div>
-                    </div>
-                    <!-- java 컨텐츠 -->
-                    <div class="planet" id="java">
-                        <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/java.png?raw=true" ></div>
-                        <div class="detail">
-                            <span>
-                                <h1> <p>Java</p> </h1>
-                                <p class="p1">System.out.print("한재성");</p>
-                            </span>
-                        </div>
-                    </div>
-                    <!-- swift 컨텐츠 -->
-                    <div class="planet" id="swift">
-                        <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/swift.png?raw=true" ></div>
-                        <div class="detail">
-                            <span>
-                                <h1> <p>Swift</p> </h1>
-                                <p class="p1">print("한재성")</p>
-                            </span>
-                        </div>
-                    </div>
-                    <!-- android 컨텐츠 -->
-                    <div class="planet" id="android">
-                        <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/android.png?raw=true" ></div>
-                        <div class="detail">
-                            <span>
-                                <h1> <p>Android</p> </h1>
-                                <p class="p1">android:text="한재성";</p>
-                            </span>
-                        </div>
-                    </div>
-                    <!-- linux 컨텐츠 -->
-                    <div class="planet" id="linux">
-                        <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/linux.png?raw=true" ></div>
-                        <div class="detail">
-                            <span>
-                                <h1> <p>linux</p> </h1>
-                                <p class="p1">[한재성@shiniper ~]$ whoami</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- 3. input-->
-                <div class="sign" id="login">
-                    <fieldset>
-                        <legend>로그인</legend>
-                        <div>아이디 : <br><br>  <input type="text"></div>
-                        <div>비밀번호 : <br><br>  <input type="password"></div>
-                        <div>
-                            <input type="submit" value="로그인"> &nbsp; <input type="reset" value="취 소">
-                        </div>   
-                    </fieldset>
-                    
-                </div>
-                <div class="sign" id="signup">
-                    <fieldset>
-                        <legend>회원가입</legend>
-                        <div>아이디 : <br><br>  <input type="text"></div>
-                        <div>비밀번호 : <br><br>  <input type="password"></div>
-                        <div>비밀번호 확인 : <br><br>  <input type="password"></div>
-                        <div>이름 : <br><br>  <input type="text"></div>
-                        <div>
-                            <input type="submit" value="회원가입"> &nbsp; <input type="reset" value="취 소">
-                        </div>   
-                    </fieldset>
-                </div>
-       
+<head>
+  <meta charset="utf-8">
+  <style>
+    /* 폰트 */
+    @font-face {
+      font-family: 'SDSamliphopangche_Outline';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    /* 태그 스타일 */
+    /* 스타일의 사용되는 그림 중 html의 배경 이미지를 제외하고 모두 깃허브 이미지 파일을 주소로 불러서 활용하였습니다 */ 
+    /* html */
+    html {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      /* 배경 이미지를 url로 불러오지만 해당 주소가 바뀐 경우 그림이 안보여 흰색 배경이 나오는걸 방지하기 위해 배경값을 따로 줌*/ 
+      background: #060e1b;
+      background-image: url(https://cdn.pixabay.com/photo/2020/11/07/01/40/abstract-5719530_1280.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* 폰트 사용 */
+      font: bold;
+      font-family: 'SDSamliphopangche_Outline';
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 0px #fff,
+        0 0 10px #fff;
+    }
+    /* body */
+    body {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+    }
+    /* header */
+    header {
+      background: none;
+      width: 100%;
+      height: 10%;
+      text-align: center;
+      font-size: 300%;
+    }
+    /* 타이틀에 관한 스타일 */
+    header a {
+      position: relative;
+      top: 30%;
+      text-decoration: none;
+      animation: head-ani 7s infinite;
+    }
+    /* 타이틀에 적용할 애니메이션 */
+    @keyframes head-ani {
+      0% {
+        text-shadow:
+          0 0 10px rgb(255, 0, 170),
+          0 0 10px rgb(255, 0, 170),
+          0 0 10px rgb(255, 0, 170),
+          0 0 10px rgb(255, 0, 170);
+      }
 
-            </article>
-        </section>
-        <footer>
-                <table border="1">
-                   <tr> <td colspan="2">201968038 한재성 </td></tr>
-                   <tr> <td>Email </td> <td>scv829@jj.ac.kr</td></tr>
-                   <tr> <td>Univ.</td> <td>Jeonju Univ. </td></tr>
-                   <tr> <td>Major</td> <td>D.C.E.</td></tr>
-                </table>
-        </footer>
-    </body>
+      25% {
+        text-shadow:
+          0 0 10px rgb(255, 143, 1),
+          0 0 10px rgb(255, 143, 1),
+          0 0 10px rgb(255, 143, 1),
+          0 0 10px rgb(255, 143, 1);
+      }
+
+      50% {
+        text-shadow:
+          0 0 10px rgb(170, 255, 1),
+          0 0 10px rgb(170, 255, 1),
+          0 0 10px rgb(170, 255, 1),
+          0 0 10px rgb(170, 255, 1);
+      }
+
+      75% {
+        text-shadow:
+          0 0 10px rgb(0, 170, 255),
+          0 0 10px rgb(0, 170, 255),
+          0 0 10px rgb(0, 170, 255),
+          0 0 10px rgb(0, 170, 255);
+      }
+
+      100% {
+        text-shadow:
+          0 0 10px rgb(170, 0, 255),
+          0 0 10px rgb(170, 0, 255),
+          0 0 10px rgb(170, 0, 255),
+          0 0 10px rgb(170, 0, 255);
+
+        text-shadow:
+          0 0 10px rgb(255, 0, 170),
+          0 0 10px rgb(255, 0, 170),
+          0 0 10px rgb(255, 0, 170),
+          0 0 10px rgb(255, 0, 170);
+      }
+
+    }
+
+    /* section */
+    section {
+      width: 100%;
+      height: 80%;
+      background: none;
+    }
+    /* article */
+    article {
+      margin: 0 auto;
+      width: 70%;
+      height: 80%;
+      position: relative;
+      top: 6%;
+    }
+
+    /* footer */
+    footer {
+      width: 100%;
+      height: 10%;
+      background: none;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 80%;
+    }
+
+    /* nav */
+    nav {
+      position: relative;
+      top: 20%;
+      width: 10%;
+      height: 40%;
+      float: left;
+    }
+
+
+    /* 수직 메뉴*/
+    /* 메뉴 담는 곳*/ 
+    #vertical {
+      margin: 0 auto;
+      padding: 60% 0;
+      width: 100%;
+      text-align: center;
+      list-style-type: none;
+    }
+
+    /* 메뉴 */
+    .ver_menu {
+      position: relative;
+      text-decoration: none;
+      margin: 0 10%;
+      padding: 0 10px;
+      background: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 애니메이션 등록 */ 
+    #l1 {
+      animation: ver-ani 0.8s linear forwards;
+    }
+
+    #l2 {
+      animation: ver-ani 1s linear forwards;
+    }
+
+    #l3 {
+      animation: ver-ani 1.2s linear forwards;
+    }
+
+    /* 수직 메뉴 애니메이션 */
+    @keyframes ver-ani {
+      from {
+        filter: blur(0) opacity(0%);
+        transform: translate(0, 50%);
+      }
+
+      to {
+        filter: blur(0) opacity(100%);
+        transform: translate(0, -50%);
+      }
+    }
+
+    /* 수직 메뉴 hover 했을 때 */ 
+    .ver_menu:hover {
+      background-color: rgb(101, 154, 210, 0.2);
+      border-radius: 30%;
+    }
+
+
+    /*  드롭다운 서브메뉴 */
+    /* 메뉴 담는 곳 */
+    .dropdown {
+      display: inline-block;
+      color: white;
+      margin: auto 10%;
+      background: none;
+      font-size: 150%;
+    }
+
+    /* 부모 메뉴 */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: none;
+      transform: translateX(-10%);
+    }
+
+    /* 서브 메뉴 */
+    .dropdown-content a {
+      display: block;
+      padding: auto;
+      text-decoration: none;
+      color: black;
+
+    }
+
+    .dropdown-content a:hover {
+      background: lavender;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+
+    /* 수평 메뉴*/
+    /* 메뉴 담는 곳 */
+    #horizontal {
+      background: none;
+      padding: 10px;
+      width: 80%;
+      text-align: center;
+      overflow: hidden;
+    }
+    /* 메뉴 */ 
+    .hor_menu {
+      color: white;
+      text-decoration: none;
+      margin: auto 10%;
+
+      background: none;
+      font-size: 150%;
+    }
+    
+    .hor_menu:hover {
+      color: #060e1b;
+    }
+
+    /* 테이블 */
+    table {
+      margin: 0 auto;
+      color: wheat;
+      font-size: 130%;
+      height: 50%;
+      text-shadow:
+        0 0 10px #fff,
+        0 0 5px #fff,
+        0 0 10px #060e1b,
+        0 0 0px #060e1b;
+      border-left: none;
+      border-right: none;
+      border-top: 2px solid wheat;
+      border-bottom: 2px solid wheat;
+    }
+
+    td {
+      border: none;
+    }
+
+    /* 컨텐츠 */
+    article>div {
+      display: none;
+    }
+
+    article>div:target {
+      display: block;
+      filter: blur(0) opacity(100%);
+      transition: 0.5s;
+    }
+
+
+    /*  
+      1. project-planet 스타일 
+      2. learned-planet 스타일
+      3. input 스타일
+    */
+
+    /* 1. project-planet 스타일*/
+
+    /* project_planet 본체*/ 
+    #project_planet {
+      border: 3px solid wheat;
+      border-radius: 180%;
+      width: 50%;
+      height: 70%;
+      text-align: center;
+      position: relative;
+      left: 25%;
+      top: 20%;
+      animation: project-ani 5s infinite;
+      background-color: rgb(5, 14, 28, 0.5);
+    }
+    /* project_planet안에 hr 태그*/
+    #project_planet hr {
+      position: relative;
+      top: 25%;
+    }
+    /* project_planet 팀 프로젝트 스타일 */
+    #team {
+      position: relative;
+      top: 10%;
+    }
+    /* project_planet 개인 프로젝트 스타일 */
+    #solo {
+      position: relative;
+      top: 35%;
+    }
+    /* project_planet의 테두리에 나타날 애니메이션 */
+    @keyframes project-ani {
+      0% {
+        border-top: 3px solid #08F7FE;
+        border-bottom: 3px solid #09FBD3;
+        border-left: 3px solid #FE53BB;
+        border-right: 3px solid #F5D300;
+
+        box-shadow:
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 2px #fff;
+      }
+
+      25% {
+        border-left: 3px solid #08F7FE;
+        border-right: 3px solid #09FBD3;
+        border-bottom: 3px solid #FE53BB;
+        border-top: 3px solid #F5D300;
+
+        box-shadow:
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 2px #fff;
+      }
+
+      50% {
+        border-bottom: 3px solid #08F7FE;
+        border-top: 3px solid #09FBD3;
+        border-right: 3px solid #FE53BB;
+        border-left: 3px solid #F5D300;
+
+        box-shadow:
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 2px #fff;
+      }
+
+      75% {
+        border-right: 3px solid #08F7FE;
+        border-left: 3px solid #09FBD3;
+        border-top: 3px solid #FE53BB;
+        border-bottom: 3px solid #F5D300;
+
+        box-shadow:
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 2px #fff;
+      }
+
+      100% {
+        border-top: 3px solid #08F7FE;
+        border-bottom: 3px solid #09FBD3;
+        border-left: 3px solid #FE53BB;
+        border-right: 3px solid #F5D300;
+
+        box-shadow:
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 2px #fff;
+      }
+    }
+
+
+    /* 2. learned-planet 스타일*/
+    /* learned-planet 본체 */
+    #learned_planet {
+      float: left;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      animation: ani 1s linear forwards; /* 애니메이션 적용 */
+    }
+
+    /* learned-planet 애니메이션 */
+    /* 천천히 나타나는 모션 */
+    @keyframes ani {
+      from {
+        transform: translate(0, 0);
+        filter: blur(0) opacity(0%);
+        transition: 1s;
+      }
+      to {
+        transform: translate(0, 50px);
+      }
+    }
+
+
+    /* learned-planet > 공통 */
+    /* learned-planet 안에 있는 div가 공용으로 사용하는 클래스 정의*/ 
+
+    /* 제목+내용이 나오는 곳 */ 
+    .detail {
+      border-radius: 10%;
+      position: absolute;
+      display: none;
+      width: 15%;
+      height: 15%;
+    }
+    /* 제목 */ 
+    .detail p {
+      text-align: center;
+      word-break: break-all;
+      overflow: hidden;
+    }
+    /* 내용 */
+    .p1 {
+      padding-top: 10%;
+      text-align: center;
+
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 5px #fff,
+        0 0 10px #fff;
+    }
+    /* img가 들어가 div 와 img */ 
+    .imgBox,
+    .imgBox img {
+      max-height: 100%;
+      text-align: center;
+    }
+    /* 각 언어에 대한 정보를 보여주기 위한 스타일 */ 
+    #c:hover .detail,
+    #cpp:hover .detail,
+    #csharp:hover .detail,
+    #java:hover .detail,
+    #android:hover .detail,
+    #linux:hover .detail,
+    #swift:hover .detail {
+      display: block;
+    }
+    
+    /* 이미지 투명도 변화 hover일 때 */
+    .planet:hover .imgBox {
+      filter: blur(3px) opacity(50%);
+      transition: 0.5s;
+    }
+    /* 내용 투명도 변화 hover일 때 */
+    .planet:hover .detail {
+      filter: blur(0) opacity(100%);
+      transition: 0.5s;
+    }
+    /* 이미지 투명도 변화 */
+    .planet .detail {
+      filter: blur(0) opacity(0%);
+      transition: 0.5s;
+    }
+    /* 내용 투명도 변화 hover일 때 */
+    .planet .imgBox {
+      filter: blur(0) opacity(100%);
+      transition: 0.5s;
+    }
+
+    /* learned-planet > c 컨텐츠 스타일 */
+    #c .imgBox,
+    #c .detail {
+      position: absolute;
+      top: 0;
+      width: 15%;
+      height: 15%;
+    }
+    
+    #c .detail {
+      box-shadow:
+        0 0 5px rgb(101, 78, 210),
+        0 0 10px rgb(101, 78, 210),
+        0 0 0px rgb(101, 78, 210),
+        0 0 10px rgb(101, 78, 210);
+    }
+
+    /* learned-planet > cpp 컨텐츠 스타일 */
+    #cpp .imgBox,
+    #cpp .detail {
+      position: absolute;
+      top: 70%;
+      left: 80%;
+      width: 40%;
+      height: 40%;
+    }
+
+    #cpp .detail {
+      box-shadow:
+        0 0 5px rgb(101, 154, 210),
+        0 0 10px rgb(101, 154, 210),
+        0 0 0px rgb(101, 154, 210),
+        0 0 10px rgb(101, 154, 210);
+    }
+
+    /* learned-planet > csharp 컨텐츠 스타일 */
+    #csharp .imgBox,
+    #csharp .detail {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      width: 20%;
+      height: 20%;
+    }
+
+    #csharp .detail {
+      box-shadow:
+        0 0 5px rgb(118, 0, 149),
+        0 0 10px rgb(118, 0, 149),
+        0 0 0px rgb(118, 0, 149),
+        0 0 10px rgb(118, 0, 149);
+    }
+
+    /* learned-planet > java 컨텐츠 스타일 */
+    #java .imgBox,
+    #java .detail {
+      position: absolute;
+      top: 35%;
+      left: 70%;
+      width: 20%;
+      height: 20%;
+    }
+
+    #java .detail {
+      box-shadow:
+        0 0 5px rgb(255, 234, 204),
+        0 0 10px rgb(255, 234, 204),
+        0 0 0px rgb(255, 234, 204),
+        0 0 10px rgb(255, 234, 204);
+    }
+
+    /* learned-planet > swift 컨텐츠 스타일 */
+    #swift .imgBox,
+    #swift .detail {
+      position: absolute;
+      top: 25%;
+      left: 100%;
+      width: 32%;
+      height: 20%;
+    }
+
+    #swift .detail {
+      box-shadow:
+        0 0 5px rgb(250, 148, 64),
+        0 0 10px rgb(250, 148, 64),
+        0 0 0px rgb(250, 148, 64),
+        0 0 10px rgb(250, 148, 64);
+    }
+
+    /* learned-planet > android 컨텐츠 스타일 */
+    #android .imgBox,
+    #android .detail {
+      position: absolute;
+      top: 0;
+      left: 40%;
+      width: 48%;
+      height: 30%;
+    }
+
+    #android .detail {
+      box-shadow:
+        0 0 5px rgb(162, 255, 106),
+        0 0 10px rgb(162, 255, 106),
+        0 0 0px rgb(162, 255, 106),
+        0 0 10px rgb(162, 255, 106);
+    }
+
+    /* learned-planet > linux 컨텐츠 스타일 */
+    #linux .imgBox,
+    #linux .detail {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      width: 72%;
+      height: 45%;
+    }
+
+    #linux .detail {
+      box-shadow:
+        0 0 5px rgb(255, 231, 73),
+        0 0 10px rgb(255, 231, 73),
+        0 0 0px rgb(255, 231, 73),
+        0 0 10px rgb(255, 231, 73);
+    }
+
+    /* 3. input 스타일*/
+
+    /* 로그인 | 회원가입 애니메이션 */
+    @keyframes input-ani {
+      0% {
+        box-shadow:
+          0 0 10px rgb(255, 255, 102),
+          0 0 10px rgb(252, 110, 34),
+          0 0 10px rgb(255, 20, 147),
+          0 0 10px rgb(194, 76, 246);
+
+      }
+
+      33% {
+        box-shadow:
+          0 0 10px rgb(194, 76, 246),
+          0 0 10px rgb(255, 255, 102),
+          0 0 10px rgb(252, 110, 34),
+          0 0 10px rgb(255, 20, 147);
+      }
+
+      66% {
+        box-shadow:
+          0 0 10px rgb(255, 20, 147),
+          0 0 10px rgb(194, 76, 246),
+          0 0 10px rgb(255, 255, 102),
+          0 0 10px rgb(252, 110, 34);
+      }
+
+      100% {
+        box-shadow:
+          0 0 10px rgb(252, 110, 34),
+          0 0 10px rgb(255, 20, 147),
+          0 0 10px rgb(194, 76, 246),
+          0 0 10px rgb(255, 255, 102);
+      }
+    }
+
+    /* 
+    .sign: 공통으로 사용하는 스타일 
+    #signip : 회원가입만 사용하는 스타일
+    */
+    .sign {
+      text-align: center;
+      height: 80%;
+    }
+
+    .sign fieldset {
+      transform: translateX();
+      width: 40%;
+      height: auto;
+      background: #060e1b;
+      animation: input-ani 5s infinite;
+      border-radius: 5%;
+      margin: 0 auto;
+      height: 50%;
+      color: tomato
+    }
+
+    .sign div {
+      padding: 7% 0;
+    }
+
+    .sign input {
+      background: #060e1b;
+      animation: input-ani 5s infinite;
+      border-radius: 5%;
+      color: #fff;
+    }
+
+    #signup fieldset {
+      color: aqua;
+      transform: translateX();
+      width: 40%;
+      background: #060e1b;
+      animation: input-ani 5s infinite;
+      border-radius: 5%;
+      margin: 0 auto;
+      padding-bottom: 20%;
+    }
+
+    #signup div {
+      padding: 3%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- 타이틀 -->
+    <a href="#main">shiniper's home</a>
+  </header>
+  <nav>
+    <!-- 수직 메뉴 -->
+    <ul id="vertical">
+      <li> 
+        <a href="http://www.github.com" target="_blank">
+        <img src="https://github.com/scv829/webProgramming/blob/main/image/github.png?raw=true" class="ver_menu" id="l1"> </a> 
+      </li>
+      <li> 
+        <a href="http://www.facebook.com" target="_blank">
+        <img src="https://github.com/scv829/webProgramming/blob/main/image/facebook.png?raw=true" class="ver_menu" id="l2"> </a>
+      </li>
+      <li> 
+        <a href="http://www.instagram.com/" target="_blank">
+        <img src="https://github.com/scv829/webProgramming/blob/main/image/instargram.png?raw=true" class="ver_menu" id="l3"> </a> 
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <!-- 수평 메뉴 -->
+    <div id="horizontal">
+      <a href="#project_planet" class="hor_menu">project planet</a>
+      <a href="#learned_planet" class="hor_menu">learned planet</a>
+      <!-- 드롭다운 서브 메뉴 -->
+      <div class="dropdown">input
+        <div class="dropdown-content">
+          <a href="#login">login</a>
+          <a href="#signup">signup</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 컨텐츠 나오는 공간 -->
+    <article>
+      <!-- 0. main -->
+        <div id="main">
+          asdfasdfasdf
+        </div>
+      <!-- 1. project_planet-->
+      <div id="project_planet">
+        <!-- 팀 프로젝트-->
+        <div id="team">
+          <h1>팀 프로젝트</h1> <br>
+          <b>c언어 - 대학생활도우미 앱</b>
+        </div>
+        <hr>
+        <!-- 개인 프로젝트-->
+        <div id="solo">
+          <b>Java - 학교 배경 길찾기 게임 <br><br>
+            Android - 자동화 플랜 앱 개발 <br> <br>
+            linux - DB, apache 서버 구동</b><br>
+          <h1>개인 프로젝트</h1>
+        </div>
+      </div>
+      <!-- 2. learned_planet -->
+      <div id="learned_planet">
+        <!-- c 컨텐츠 -->
+        <div class="planet" id="c">
+          <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/c.png?raw=true"></div>
+          <div class="detail">
+            <span>
+              <h1>
+                <p>C</p>
+              </h1>
+              <p class="p1">printf("한재성");</p>
+            </span>
+          </div>
+        </div>
+        <!-- c++ 컨텐츠 -->
+        <div class="planet" id="cpp">
+          <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/cpp.png?raw=true">
+          </div>
+          <div class="detail">
+            <span>
+              <h1>
+                <p>C++</p>
+              </h1>
+              <p class="p1">std::cont << "한재성" << std::endl;</p>
+            </span>
+          </div>
+        </div>
+        <!-- c# 컨텐츠 -->
+        <div class="planet" id="csharp">
+          <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/csharp.png?raw=true">
+          </div>
+          <div class="detail">
+            <span>
+              <h1>
+                <p>C#</p>
+              </h1>
+              <p class="p1">Console.Write("한재성");</p>
+            </span>
+          </div>
+        </div>
+        <!-- java 컨텐츠 -->
+        <div class="planet" id="java">
+          <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/java.png?raw=true">
+          </div>
+          <div class="detail">
+            <span>
+              <h1>
+                <p>Java</p>
+              </h1>
+              <p class="p1">System.out.print("한재성");</p>
+            </span>
+          </div>
+        </div>
+        <!-- swift 컨텐츠 -->
+        <div class="planet" id="swift">
+          <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/swift.png?raw=true">
+          </div>
+          <div class="detail">
+            <span>
+              <h1>
+                <p>Swift</p>
+              </h1>
+              <p class="p1">print("한재성")</p>
+            </span>
+          </div>
+        </div>
+        <!-- android 컨텐츠 -->
+        <div class="planet" id="android">
+          <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/android.png?raw=true">
+          </div>
+          <div class="detail">
+            <span>
+              <h1>
+                <p>Android</p>
+              </h1>
+              <p class="p1">android:text="한재성";</p>
+            </span>
+          </div>
+        </div>
+        <!-- linux 컨텐츠 -->
+        <div class="planet" id="linux">
+          <div class="imgBox"><img src="https://github.com/scv829/webProgramming/blob/main/image/linux.png?raw=true">
+          </div>
+          <div class="detail">
+            <span>
+              <h1>
+                <p>linux</p>
+              </h1>
+              <p class="p1">[한재성@shiniper ~]$ whoami</p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. input-->
+        <!-- 로그인  -->
+      <div class="sign" id="login">
+        <fieldset>
+          <legend>로그인</legend>
+          <div>아이디 : <br><br> <input type="text"></div>
+          <div>비밀번호 : <br><br> <input type="password"></div>
+          <div>
+            <input type="submit" value="로그인"> &nbsp; <input type="reset" value="취 소">
+          </div>
+        </fieldset>
+      </div>
+        <!-- 회원가입 -->
+      <div class="sign" id="signup">
+        <fieldset>
+          <legend>회원가입</legend>
+          <div>아이디 : <br><br> <input type="text"></div>
+          <div>비밀번호 : <br><br> <input type="password"></div>
+          <div>비밀번호 확인 : <br><br> <input type="password"></div>
+          <div>이름 : <br><br> <input type="text"></div>
+          <div>
+            <input type="submit" value="회원가입"> &nbsp; <input type="reset" value="취 소">
+          </div>
+        </fieldset>
+      </div>
+    </article>
+  </section>
+  <!-- 테이블 -->
+  <footer>
+    <table border="1">
+      <tr>
+        <td colspan="2">201968038 한재성 </td>
+      </tr>
+      <tr>
+        <td>Email </td>
+        <td>scv829@jj.ac.kr</td>
+      </tr>
+      <tr>
+        <td>Univ.</td>
+        <td>Jeonju Univ. </td>
+      </tr>
+      <tr>
+        <td>Major</td>
+        <td>D.C.E.</td>
+      </tr>
+    </table>
+  </footer>
+</body>
+
 </html>
